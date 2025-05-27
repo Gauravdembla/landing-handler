@@ -571,7 +571,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const phoneInput = document.querySelector('input[name="phone_sp"]');
                         if (phoneInput) {
                             phoneInput.addEventListener("input", function() {
-                                const isValid = /^\\d{10}$/.test(this.value.trim()); 
+                                const isValid = /^\d{10}$/.test(this.value.trim()); 
                                 console.log('[DEBUG] Phone input changed. Is valid:', isValid);
                                 if (submitBtn) {
                                     submitBtn.style.opacity = isValid ? "1" : "0.7";
