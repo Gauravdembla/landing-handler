@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             submitBtn.style.display = "none";
                             
                             const countdownEl = document.createElement('div');
-                            countdownEl.style.cssText = \\\`
+                            countdownEl.style.cssText = `
                                 width: 100%;
                                 height: 60px;
                                 border-radius: 50px;
@@ -419,9 +419,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                 color: white;
                                 position: relative;
                                 overflow: hidden;
-                            \\\`;
+                            `;
                             
-                            countdownEl.innerHTML = \\\`
+                            countdownEl.innerHTML = `
                                 <div style="font-size: 16px; font-weight: 600; margin-bottom: 2px; z-index: 2;">
                                     Redirecting in <span id="countdown-number">4</span> seconds...
                                 </div>
@@ -431,7 +431,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(255,255,255,0.2);">
                                     <div id="countdown-progress" style="height: 100%; width: 0%; background: white; transition: width 1s linear;"></div>
                                 </div>
-                            \\\`;
+                            `;
                             
                             submitBtn.parentNode.insertAdjacentElement('afterend', countdownEl);
                             
@@ -439,7 +439,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             const interval = setInterval(() => {
                                 countdown--;
                                 document.getElementById('countdown-number').textContent = countdown;
-                                document.getElementById('countdown-progress').style.width = \\\`\${(4 - countdown) * 25}%\\\`;
+                               document.getElementById('countdown-progress').style.width = `${(4 - countdown) * 25}%`;
                                 
                                 if (countdown <= 0) {
                                     clearInterval(interval);
