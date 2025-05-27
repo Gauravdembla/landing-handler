@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 return;
                             }
                             
-                            if (!/^\\d{10}$/.test(phone)) {
+                            if (!/^\d{10}$/.test(phone)) {
                                 console.error('[DEBUG] Validation failed: Invalid phone format');
                                 alert("Please enter a valid 10-digit phone number");
                                 return;
