@@ -57,63 +57,63 @@ document.addEventListener("DOMContentLoaded", function() {
                                   "font-weight: 600;" +
                                   "font-size: clamp(14px, 3.5vw, 16px);";
                                                                 
-                                submitBtn.innerHTML = \\\`
-                                    <div style="
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        width: 100%;
-                                        position: relative;
-                                        gap: 8px;
+                               submitBtn.innerHTML = `
+                                  <div style="
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    position: relative;
+                                    gap: 8px;
+                                  ">
+                                    <span style="
+                                      display: inline-block;
+                                      overflow: hidden;
+                                      text-overflow: ellipsis;
+                                      white-space: nowrap;
+                                      text-align: center;
+                                      flex: 1;
+                                      padding: 0 30px 0 0;
+                                    ">Finishing Registration • Unlocking Bonuses</span>
+                                    <div class="loading-dots" style="
+                                      position: absolute;
+                                      right: 15px;
+                                      display: flex;
+                                      gap: 5px;
                                     ">
-                                        <span style="
-                                            display: inline-block;
-                                            overflow: hidden;
-                                            text-overflow: ellipsis;
-                                            white-space: nowrap;
-                                            text-align: center;
-                                            flex: 1;
-                                            padding: 0 30px 0 0;
-                                        ">Finishing Registration • Unlocking Bonuses</span>
-                                        <div class="loading-dots" style="
-                                            position: absolute;
-                                            right: 15px;
-                                            display: flex;
-                                            gap: 5px;
-                                        ">
-                                            <div style="
-                                                width: 8px;
-                                                height: 8px;
-                                                border-radius: 50%;
-                                                background: white;
-                                                animation: dotPulse 1.4s infinite ease-in-out;
-                                                animation-delay: 0.2s;
-                                            "></div>
-                                            <div style="
-                                                width: 8px;
-                                                height: 8px;
-                                                border-radius: 50%;
-                                                background: white;
-                                                animation: dotPulse 1.4s infinite ease-in-out;
-                                                animation-delay: 0.4s;
-                                            "></div>
-                                            <div style="
-                                                width: 8px;
-                                                height: 8px;
-                                                border-radius: 50%;
-                                                background: white;
-                                                animation: dotPulse 1.4s infinite ease-in-out;
-                                                animation-delay: 0.6s;
-                                            "></div>
-                                        </div>
+                                      <div style="
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 50%;
+                                        background: white;
+                                        animation: dotPulse 1.4s infinite ease-in-out;
+                                        animation-delay: 0.2s;
+                                      "></div>
+                                      <div style="
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 50%;
+                                        background: white;
+                                        animation: dotPulse 1.4s infinite ease-in-out;
+                                        animation-delay: 0.4s;
+                                      "></div>
+                                      <div style="
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 50%;
+                                        background: white;
+                                        animation: dotPulse 1.4s infinite ease-in-out;
+                                        animation-delay: 0.6s;
+                                      "></div>
                                     </div>
-                                    <style>
-                                        @keyframes dotPulse {
-                                            0%, 60%, 100% { transform: scale(0.8); opacity: 0.5; }
-                                            30% { transform: scale(1.1); opacity: 1; }
-                                        }
-                                    </style>
-                                \\\`;
+                                  </div>
+                                  <style>
+                                    @keyframes dotPulse {
+                                      0%, 60%, 100% { transform: scale(0.8); opacity: 0.5; }
+                                      30% { transform: scale(1.1); opacity: 1; }
+                                    }
+                                  </style>
+                                `;
                             }
                         }
 
