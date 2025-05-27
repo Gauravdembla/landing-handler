@@ -573,6 +573,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             phoneInput.addEventListener("input", function() {
                                 const isValid = /^\d{10}$/.test(this.value.trim()); 
                                 console.log('[DEBUG] Phone input changed. Is valid:', isValid);
+                              console.log('Phone No Validated');
                                 if (submitBtn) {
                                     submitBtn.style.opacity = isValid ? "1" : "0.7";
                                     submitBtn.style.pointerEvents = isValid ? "auto" : "none";
