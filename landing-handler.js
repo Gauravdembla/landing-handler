@@ -39,25 +39,24 @@ document.addEventListener("DOMContentLoaded", function() {
                         // Enhanced processing state with perfect text alignment
                         function showProcessingState() {
                             if (submitBtn) {
-                                submitBtn.style.cssText = \`
-                                    pointer-events: none;
-                                    border: none;
-                                    border-radius: 50px;
-                                    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-                                    color: white;
-                                    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);
-                                    overflow: hidden;
-                                    position: relative;
-                                    padding: 0 20px;
-                                    white-space: nowrap;
-                                    height: 60px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    font-weight: 600;
-                                    font-size: clamp(14px, 3.5vw, 16px);
-                                \`;
-                                
+                                submitBtn.style.cssText = 
+                                  "pointer-events: none;" +
+                                  "border: none;" +
+                                  "border-radius: 50px;" +
+                                  "background: linear-gradient(90deg, #3b82f6, #8b5cf6);" +
+                                  "color: white;" +
+                                  "box-shadow: 0 4px 15px rgba(59, 130, 246, 0.5);" +
+                                  "overflow: hidden;" +
+                                  "position: relative;" +
+                                  "padding: 0 20px;" +
+                                  "white-space: nowrap;" +
+                                  "height: 60px;" +
+                                  "display: flex;" +
+                                  "align-items: center;" +
+                                  "justify-content: center;" +
+                                  "font-weight: 600;" +
+                                  "font-size: clamp(14px, 3.5vw, 16px);";
+                                                                
                                 submitBtn.innerHTML = \`
                                     <div style="
                                         display: flex;
