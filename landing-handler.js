@@ -1,15 +1,4 @@
-export default {
-    async fetch(request) {
-        const allowedDomains = ['shreedembla.com', 'app.swipepages.com', 'aoe.shreedembla.com'];
-      const origin = request.headers.get('Origin') || request.headers.get('Referer');
-
-        if (origin) {
-            const originHostname = new URL(origin).hostname;
-            const isAllowed = allowedDomains.some(domain => originHostname.endsWith(domain));
-            if (isAllowed) {
-                return new Response(
-                    `
-                    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
                         // User details variables
                         let userCity = "Unknown";
                         let userIp = "Unknown";
@@ -591,18 +580,3 @@ export default {
                             });
                         }
                     });
-                    `,
-                    {
-                        headers: {
-                            'Content-Type': 'application/javascript',
-                            'Access-Control-Allow-Origin': origin,
-                            'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-                            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                        },
-                    }
-                );
-            }
-        }
-        return new Response('Unauthorized', { status: 403 });
-    },
-};
