@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     userIp = data.ip || "Unknown";
                                     userTimezone = data.timezone || "Unknown";
                                     console.log('[DEBUG] User Details Fetched:', { userCity, userIp, userTimezone });
+                                  console.log('Successfull Loaded JS' });
                                 })
                                 .catch(error => console.error('[DEBUG] Error fetching user details:', error));
                         }
