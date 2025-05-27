@@ -5,8 +5,7 @@ export default {
 
         if (origin) {
             const originHostname = new URL(origin).hostname;
-            const isAllowed = allowedDomains.some(domain => originHostname.endsWith(domain));
-
+            const isAllowed = allowedDomains.some(domain => originHostname === domain || originHostname.endsWith('.' + domain));
             if (isAllowed) {
                 return new Response(
                     `
