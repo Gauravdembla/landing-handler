@@ -1,7 +1,7 @@
 export default {
     async fetch(request) {
-        const allowedDomains = ['shreedembla.com', 'app.swipepages.com'];
-        const isAllowed = allowedDomains.some(domain => originHostname === domain || originHostname.endsWith('.' + domain));
+        const allowedDomains = ['shreedembla.com', 'app.swipepages.com', 'aoe.shreedembla.com'];
+      const origin = request.headers.get('Origin') || request.headers.get('Referer');
 
         if (origin) {
             const originHostname = new URL(origin).hostname;
